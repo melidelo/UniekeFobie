@@ -1,0 +1,170 @@
+/*HOME*/
+.extra_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px 0px;
+}
+
+.extra_nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+}
+
+.extra_nav a:hover {
+  color: #DB989B;
+  text-decoration: none;
+}
+
+.extra_nav .nav_img {
+  max-width: 80px;
+}
+
+/*oorzaken*/
+.afbeedling_plat {
+  margin-top: 30px;
+}
+
+/*kenmerken*/
+.kenmerken li {
+  list-style: url(../images/check.png);
+  padding: 5px 0px;
+}
+
+/*hulpmiddelen*/
+.tekst_hulpmiddelen2 h3 {
+  text-align: center;
+  padding: 10px 0px 40px 0px;
+}
+
+.tekst_hulpmiddelen2 a {
+  text-decoration: none;
+  color: white;
+  background-color: #DB989B;
+  padding: 10px 120px;
+  border: none;
+  border-radius: 20px;
+}
+
+.tekst_hulpmiddelen2 a:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #F1BBBE;
+}
+
+.meubelen {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 799px) {
+  .meubel_desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .meubel_mobile {
+    display: none;
+  }
+}
+
+.hulp_doneren {
+  margin-bottom: 50px;
+}
+
+/*doneren*/
+.tekst_doneren input[type=number] {
+  background: #f3d7d9;
+  width: 150px;
+  padding: 5px 10px;
+  border: 2px solid #DB989B;
+  border-radius: 20px;
+  outline: none;
+  text-align: center;
+  margin: 50px 10px 20px 0px;
+}
+
+.tekst_doneren input[type=submit] {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  background-color: #DB989B;
+  padding: 10px 120px;
+  border: none;
+  border-radius: 200px;
+  margin-bottom: 60px;
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .tekst_doneren input[type=submit] {
+    margin: 0px;
+    width: 80%;
+  }
+}
+
+.tekst_doneren input[type=submit]:hover {
+  background-color: #F1BBBE;
+}
+
+@media screen and (min-width: 800px) {
+  .tekst_doneren fieldset {
+    text-align: left;
+  }
+}
+
+.tekst_doneren a {
+  text-decoration: underline;
+  color: black;
+  font-weight: 500;
+}
+
+.tekst_doneren a:hover {
+  color: #DB989B;
+}
+
+.tekst_doneren .balk {
+  width: 100%;
+  height: 14px;
+  padding: 0;
+  margin: 0;
+  background: #f3d7d9;
+  border-radius: 10px;
+}
+
+.tekst_doneren .balk_vulling {
+  position: relative;
+  top: -4px;
+  display: inline-block;
+  height: 14px;
+  width: 34.725%;
+  max-width: 100%;
+  background: #DB989B;
+  border-radius: 10px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  /* overgang bij verandering van breedte */
+}
+
+/*teks alle pagina's*/
+@media screen and (min-width: 800px) {
+  .tekst_home, .tekst_hulpmiddelen, .tekst_doneren {
+    margin-top: -600px;
+  }
+  .tekst_kenmerken, .tekst_oorzaken {
+    margin-top: -670px;
+  }
+  .afbeelding2 {
+    margin-top: 60px;
+  }
+  .tekst_hulpmiddelen2 {
+    text-align: center;
+    margin-top: 50px;
+  }
+}
+/*# sourceMappingURL=home.css.map */

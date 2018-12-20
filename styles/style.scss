@@ -1,0 +1,301 @@
+/*VARIABELEN*/
+
+$roze: #F1BBBE;
+$lichtroze: rgb(243, 215, 217);
+$donkerroze: #DB989B;
+
+/*-------------------------------------------------------------------------------------------------------*/
+
+/* NAVIGATIE */
+
+/*om menu achter titel te laten schuiven*/
+.titel {
+    background-color: white;
+    z-index: 99;
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: $roze;
+    }
+}
+
+.navigatie {
+    h1 {
+    font-family: "Mali";
+    font-weight: 700;
+    font-size: 35px;
+    padding-top: 5px;
+        @media screen and (min-width: 800px) {
+            padding: 20px 0px;
+        }
+    }
+}
+
+.menu {
+    height: 400px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    transition: all 1s;
+
+    @media screen and (min-width: 800px) {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-top: 25px; 
+    }
+
+    a {
+    color: black;
+    font-family: "Mali";
+
+        @media screen and (min-width: 800px) {
+            padding: 0px 20px;
+        }
+    }
+
+    a:hover {
+        color: black;
+        text-decoration: none;
+
+        @media screen and (min-width: 800px) {
+            background-image: url(../images/lijn.png);
+            background-repeat: no-repeat;
+            background-size: 80%;
+            background-position: 15px 13px;
+        }
+    }
+
+    .a_active {
+        color: black;
+        text-decoration: none;
+        /*streep*/
+        background-image: url(../images/lijn.png);
+        background-repeat: no-repeat;
+        background-size: 80%;
+        background-position: 15px 13px;
+
+    }
+
+    li {
+        padding: 25px 0px;
+        display: flex;
+        justify-content: center;
+
+        @media screen and (min-width: 800px) {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px 0px;
+        }
+    }
+
+    ul {
+        padding: 0px;
+
+    }
+}
+
+.verborgen {
+    height: 0;
+    top: -400px;
+}
+
+
+/*HAMBURGER*/
+.hamburger {
+    padding-top: 6px;
+    display: inline-block;
+    cursor: pointer;
+} 
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+/* Rotate first bar */
+.change .bar1 {
+-webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+/* Fade out the second bar */
+.change .bar2 {
+opacity: 0;
+}
+/* Rotate last bar */
+.change .bar3 {
+-webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+
+@media screen and (min-width: 800px) {
+    .hamburger {
+        display: none;
+    }
+    .menu {
+        top: 50px;
+        vertical-align: top;
+
+        li {
+            display: inline;
+        }
+    }
+}
+
+
+/*-------------------------------------------------------------------------------------------------------*/
+
+/*ALGEMEEN*/
+
+li {
+    list-style: none;
+}
+
+body {
+    h2 {
+        font-family: "Mali";
+        font-size: 40px;
+        font-weight: 700;
+        padding: 30px 0px;
+
+        @media screen and (min-width: 800px) {
+            padding: 10px 0px;
+        }
+    }
+
+    h3 {
+        font-family: "Mali";
+        font-size: 20px;
+    }
+
+    p {
+        font-family: "Asap"
+    }
+}
+
+
+/*tenen rechts*/
+.afbeelding_container_rechts {
+    display: flex;
+    justify-content: flex-end;
+
+   .afbeelding {
+        max-height: 350px;
+
+        @media screen and (min-width: 800px) {
+            max-height: 700px;
+        }
+   } 
+}
+
+/*tenen links*/
+.afbeelding_container_links {
+    display: flex;
+    overflow-x: hidden;
+
+   .afbeelding {
+        max-height: 350px;
+
+        @media screen and (min-width: 800px) {
+            max-height: 700px;
+        }
+   } 
+}
+
+
+
+/*-------------------------------------------------------------------------------------------------------*/
+
+/*FOOTER*/
+
+.footer {
+    padding: 20px 0px;
+
+    @media screen and (min-width: 800px) {
+        background: none;
+    }
+
+    div {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+    }
+
+    p {
+        @media screen and (min-width: 800px) {
+            margin: 0px;
+        }
+    }
+
+
+    input[type=text] {
+        background: none;
+        width: 100%;
+        padding: 5px 10px;
+        border: 2px solid $roze;
+        border-radius: 20px;
+        outline: none;
+        text-align: center;
+        margin-bottom: 20px;
+
+        @media screen and (min-width: 800px) {
+            width: 600px;
+            padding: 5px;
+            margin: 0px;
+        }
+    }
+
+
+    input[type=submit] {
+        text-decoration: none;
+        color: white;
+        background-color: #DB989B;
+        padding: 10px 120px;
+        border: none;
+        border-radius: 20px;
+        width: 100%;
+
+        @media screen and (min-width: 800px) {
+            padding: 5px 10px;
+            margin: 0px;
+            width: 200px;
+        }
+    } 
+    
+    .naam {
+        font-size: 10px;
+        padding-top: 30px;
+
+        @media screen and (min-width: 800px) {
+            margin: 0px;
+            padding: 0px;
+        }
+    }
+
+    .iconen {
+        padding-top: 30px;
+        
+        a{
+            padding: 0px 20px;
+            color: black;
+        }
+
+        @media screen and (min-width: 800px) {
+            margin: 0px;
+            padding: 0px;
+        }
+    } 
+}
+
+

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pollicem malum</title>
+
+    <!--css-->
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="styles/style.scss" rel="stylesheet" type="text/css">
+    <link href="styles/home.css" rel="stylesheet" type="text/css">
+    <link href="styles/home.scss" rel="stylesheet" type="text/css">
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css?family=Asap:400,600|Mali:500,700" rel="stylesheet"> 
+
+    <!--iconen font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--HEADER-->
+    <div class="container">
+        <div class="row navigatie">
+            <!--navigatie-->
+
+            <div class="col-2 hamburger" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="col-10 col-lg-4 titel">
+                <a href="0index.html"><h1>Pollicem malum</h1></a>
+            </div>
+            
+            <div class="menu verborgen col-12 col-lg-8">
+                <ul>
+                    <li><a href="1oorzaken.html">oorzaken</a></li>
+                    <li><a href="2kenmerken.html">kenmerken</a></li>
+                    <li><a href="3hulpmiddelen.html" class="a_active">hulpmiddelen</a></li>
+                    <li><a href="4doneren.html">doneren</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!--BODY-->
+    <div class="jumbotron_fluid afbeelding_container_links">
+        <img class="afbeelding" src="./images/3droom_links.png" alt="droomende teen">
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-5 offset-lg-7 tekst_hulpmiddelen">
+                <h2>Bescherm je tenen</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lonisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+                <h2>Veilig op blote voeten</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lonisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+            </div>
+
+            <div class="col-12 col-lg-8 offset-lg-2 tekst_hulpmiddelen2">
+                <h2>Ontwikkeling van veilige meubelen</h2>
+                <p>Met een proffesioneel team van productontwikkelaars zijn we bezig met het ontwikkelen van veilige meubels. Dat houd in dat de meubels zodanig zijn aangepast dat je er niet met je tenen kan tegenlopen. Hieronder ziet u enkele van onze ontwerpen.</p>
+            </div>
+
+            <div class="col-12">
+                <img class="meubelen meubel_desktop" src="./images/meubelen.png" alt="meubelen">
+            </div>
+            <div class="col-12">
+                <img class="meubelen meubel_mobile" src="./images/meubelen_mobile.png" alt="meubelen">
+            </div>
+
+            <div class="col-12 col-lg-6 offset-lg-3 tekst_hulpmiddelen2 hulp_doneren">
+                <h3>Help ons bij het realiseren van deze projecten voor de patiënten met Pollicem malum</h3>
+                <a href="4doneren.html">Ik wil doneren</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <div class="container">
+        <div class="row footer">
+            <div class="col-12 col-lg-3">
+                <p>aanmelden voor de nieuwsbrief</p>
+            </div>
+
+            <div class="col-12 col-lg-2">
+                <input type="text" id="e-mail" name="e-mail" placeholder="Jouw e-mailadres">
+            </div>
+
+            <div class="col-12 knop col-lg-1">  
+                <input type="submit" value="Verstuur">
+            </div>
+            <div class="col-12 col-lg-2 order-lg-2 iconen">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://plus.google.com/"><i class="fab fa-google-plus-g"></i></a>
+                <a href="https://nl.pinterest.com/"><i class="fab fa-pinterest-p"></i></a>
+                <a href="https://twitter.com/?lang=nl"><i class="fab fa-twitter"></i></a>
+            </div>
+            
+            <div class="col-12 col-lg-4 order-lg-1">
+                <p class="naam">&#9400; Melissa De Loenzien</p>
+            </div>
+        </div>
+    </div>
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
