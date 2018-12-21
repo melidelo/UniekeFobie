@@ -36,6 +36,28 @@
     }
 }
 
+.tekst_kenmerken2 {
+    text-align: center;
+    padding: 50px 0px 40px 0px;
+
+    @media screen and (max-width: 800px) {
+        display: none;
+    }
+
+}
+
+
+.test {
+    max-width: 100%;
+
+
+    @media screen and (max-width: 800px) {
+        display: none;
+    }
+}
+
+
+
 /*hulpmiddelen*/
 .tekst_hulpmiddelen2 {
     h3 {
