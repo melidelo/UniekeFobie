@@ -88,6 +88,15 @@ $donkerroze: #DB989B;
         color: white;
         background-color: $roze;
     }
+
+    div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .pulse {
+        animation-duration: 3s;
+    }
 }
 
 .meubelen {

@@ -81,6 +81,20 @@
   background-color: #F1BBBE;
 }
 
+.tekst_hulpmiddelen2 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tekst_hulpmiddelen2 .pulse {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
 .meubelen {
   max-width: 100%;
 }
