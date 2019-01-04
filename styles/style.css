@@ -214,6 +214,17 @@ body p {
           justify-content: flex-end;
 }
 
+.afbeelding_container_rechts div {
+  height: 350px;
+  background-color: #F1BBBE;
+}
+
+@media screen and (min-width: 800px) {
+  .afbeelding_container_rechts div {
+    height: 700px;
+  }
+}
+
 .afbeelding_container_rechts .afbeelding {
   max-height: 350px;
 }
@@ -230,6 +241,17 @@ body p {
   display: -ms-flexbox;
   display: flex;
   overflow-x: hidden;
+}
+
+.afbeelding_container_links div {
+  height: 350px;
+  background-color: #F1BBBE;
+}
+
+@media screen and (min-width: 800px) {
+  .afbeelding_container_links div {
+    height: 700px;
+  }
 }
 
 .afbeelding_container_links .afbeelding {

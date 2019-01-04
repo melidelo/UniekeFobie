@@ -189,20 +189,38 @@ body {
 .afbeelding_container_rechts {
     display: flex;
     justify-content: flex-end;
+    
+    div {
+        height: 350px;
+        background-color: $roze;
 
-   .afbeelding {
+        @media screen and (min-width: 800px) {
+            height: 700px;
+        }
+    }
+
+    .afbeelding {
         max-height: 350px;
 
         @media screen and (min-width: 800px) {
             max-height: 700px;
         }
-   } 
+    } 
 }
 
 /*tenen links*/
 .afbeelding_container_links {
     display: flex;
     overflow-x: hidden;
+
+    div {
+        height: 350px;
+        background-color: $roze;
+
+        @media screen and (min-width: 800px) {
+            height: 700px;
+        }
+    }
 
    .afbeelding {
         max-height: 350px;
